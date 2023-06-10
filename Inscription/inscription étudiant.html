@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Université ESSF Godomey</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style étudiant.css" rel="stylesheet">
+
+<!--Favicon-->
+    <link rel="shortcut icon" href="/img/44.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/44.jpg">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!--Content Wrap Start-->
+<section id="apply" class="courses-section">
+<div class="container">
+   <!--APPLY HEADING Start-->
+<div class="row">
+<div class="col-md-12">
+      <div class="contact_2_headung">
+         <hr>
+            <h3 class="débutH3">FORMULAIRE D'INSCRIPTION À L'ESSF</h3>
+            <h5 class="débutH5">Postulez à l'un de nos programmes de formation !</h5> 
+         <hr>              
+            <marquee behavior="alternate" class="marquee"> <p>Les champs marqués d'un astérisque (*) doivent obligatoirement êtres remplis.</p>
+            </marquee>            
+         </div>
+   </div>
+</div>
+<!--APPLY HEADING END-->
+<div class="apply_wrap">
+<div class="row">
+   <div class="col-md-12">
+      <form id="apply_form" name="apply_form" class="default-form" action="./inscription_etudiant.php" method="post">
+         <div class="apply_des">
+               <div class="col-md-12">
+               <hr> <h4 class="mb-4">Informations personnelles de l'étudiant</h4> <hr>
+               </div>
+               <div class="col-md-12">
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Nom_Etudiant" class="fl-label">Nom*</label>
+                        <input type="text" name="Nom_Etudiant" id="Nom_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Prenom_Etudiant" class="fl-label">Prénom(s)*</label>
+                        <input type="text" name="Prenom_Etudiant" id="Prenom_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group"> 
+                     <label for="Sexe_Etudiant" class="fl-label">Sexe*</label>
+                        <select id="Sexe_Etudiant" name="Sexe_Etudiant" class="form-control" requird="">
+                           <option value="Homme">Homme</option>
+                           <option value="Femme">Femme</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group"> 
+                     <label for="Sit_Matrim_Etudiant" class="fl-label">Situation Matrimonial*</label>
+                        <select id="Sit_Matrim_Etudiant" name="Sit_Matrim_Etudiant" class="form-control">
+                           <option value="select">Veuillez indiquer votre situation matrimonial</option>
+                           <option value="Single">Célibataire</option>
+                           <option value="Married">Marié(e)</option>
+                           <option value="Divorced">Divorcé(e)</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <div class="col-md-12">
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Date_Nais_Etudiant" class="fl-label">Date de naissance*</label>
+                        <input type="date" name="Date_Nais_Etudiant" id="Date_Nais_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Certificat_Acte_Nais_Etudiant" class="fl-label">Téléversez votre Acte de Naissance*</label>
+                        <input type="file" name="Certificat_Acte_Nais_Etudiant" id="Certificat_Acte_Nais_Etudiant" class="form-control">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group"> 
+                     <label for="Filiere_Desiree" class="fl-label">Filières*</label>
+                        <select id="Filiere_Desiree" name="Filiere_Desiree" class="form-control" requird="">
+                           <option value="">Veuillez sélectioner une filière</option>
+                           <optgroup label="Nos filières du secteur tertiaire">
+                           <option value="Finance Comptabilite Audit">Finance Comptabilité Audit</option>
+                           <option value="Marketing Communication et Commerce">Marketing Communication et Commerce</option>
+                           <option value="Marketing et Strategie d'Entreprise">Marketing et Stratégie d'Entreprise</option>
+                           <option value="Communication et Relations Publiques">Communication et Relations Publiques</option>
+                           <option value="Gestion des Ressources Humaines">Gestion des Ressources Humaines</option>
+                           <option value="Gestion des Organisations">Gestion des Organisations</option>
+                           <option value="Banque, Finance et Assurance">Banque, Finance et Assurance</option>
+                           <option value="Transport et Logistique">Transport et Logistique</option>
+                           <option value="Entreprenariat et Gestion des Projets">Entreprenariat et Gestion des Projets</option>
+                           <option value="Secretariat de Direction">Sécrétariat de Direction</option>
+                        </optgroup>
+                        <optgroup label="Nos filières du secteur industriel">
+                           <option value="Informatique Industriel et Maintenance">Informatique Industriel et Maintenance</option>
+                           <option value="Maintenance Biomedicale">Maintenance Biomédicale</option>
+                           <option value="Systeme Informatique et Logiciel">Système Informatique et Logiciel</option>
+                           <option value="Reseaux Informatiques et Telecommunication">Réseaux Informatiques et Télécommunication</option>
+                           <option value="Systeme Industriel">Système Industriel</option>
+                           <option value="Electronique">Electronique</option>
+                        </optgroup>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group"> 
+                     <label for="Option_Formation_Desiree" class="fl-label">Options de Formations*</label>
+                        <select id="Option_Formation_Desiree" name="Option_Formation_Desiree" class="form-control" requird="">
+                           <option value="">Nos options de formation</option>
+                           <option value="LCJ">License en cours du jour</option>
+                           <option value="LCS">License en cours du soir</option>
+                           <option value="MCJ">Master en cours du jour</option>
+                           <option value="MCS">Master en cours du soir</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               </div>
+         </div>
+         
+         <div class="apply_des">
+               <div class="col-md-12">
+               <hr> <h4 class="mb-4">Informations Complémentaires</h4> <hr>
+               </div>
+               <div class="col-md-12">
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Num_Phone_Etudiant" class="fl-label">Numéro de Téléphone*</label>
+                        <input type="text" name="Num_Phone_Etudiant" id="Num_Phone_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Email_Etudiant" class="fl-label">Adresse e-mail*</label>
+                        <input type="text" name="Email_Etudiant" id="Email_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Adress_Resid_Etudiant" class="fl-label">Adresse de résidence*</label>
+                        <input type="text" name="Adress_Resid_Etudiant" id="Adress_Resid_Etudiant" class="form-control" requird="">
+                     </div>
+                  </div>
+               </div>
+         </div>
+
+
+         <div class="apply_des">
+            <div class="col-md-12">
+            <hr> <h4 class="mb-4">Informations sur le parcours académique</h4> <hr>
+            </div>
+            <div class="col-md-12">
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group">
+                     <label for="Last_School_Frequente_Etudiant" class="fl-label">Dernière école/centre de formation fréquenté*</label>
+                     <input type="text" name="Last_School_Frequente_Etudiant" id="Last_School_Frequente_Etudiant" class="form-control" requird="">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group"> 
+                  <label for="Diplome_Atteint_Last_School_Frequente_Etudiant" class="fl-label">Niveau atteint*</label>
+                     <select id="Diplome_Atteint_Last_School_Frequente_Etudiant" name="Diplome_Atteint_Last_School_Frequente_Etudiant" class="form-control" requird="">
+                        <option value="">Veuillez sélectionner un niveau</option>
+                        <option value="O-Level">Baccalauréat</option>
+                        <option value="Undergraduate">DT</option>
+                        <option value="Post Graduate">DTI</option>
+                        <option value="Masters">License 1</option>
+                        <option value="Masters">License 2</option>
+                        <option value="Masters">Licence 3</option>
+                        <option value="Masters">Masters 1</option>
+                        <option value="Masters">Masters 2</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group">
+                     <label for="Domaine_Etude_Last_School_Frequente_Etudiant" class="fl-label">Domaine d'étude*</label>
+                     <input type="text" name="Domaine_Etude_Last_School_Frequente_Etudiant" id="Domaine_Etude_Last_School_Frequente_Etudiant" class="form-control">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group"> 
+                     <label for="Photo_Diplome_Got_Last_School_Frequente_Etudiant" class="fl-label">Photo du dernier diplôme obtenu*</label>
+                     <input type="file" name="Photo_Diplome_Got_Last_School_Frequente_Etudiant" id="Photo_Diplome_Got_Last_School_Frequente_Etudiant" class="form-control" requird="">
+                  </div>
+               </div>
+            </div>
+            </div>
+      </div> 
+      <div class="apply_des">
+            <div class="col-md-12">
+            <hr> <h4 class="mb-4">Téléverser un document d'identité</h4> <hr>
+            </div>
+            <div class="col-md-12">
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group">
+                     <label for="IDCard_Etudiant" class="fl-label">Carte d'identité/Passeport de l'étudiant*</label>
+                     <input type="file" name="IDCard_Etudiant" id="IDCard_Etudiant" class="form-control" requird="">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="input-container">
+                  <div class="form-group">
+                     <label for="SpecificationIDCard_Etudiant_Selected" class="fl-label">Veuillez indiquer le document téléversé*</label>
+                     <select id="SpecificationIDCard_Etudiant_Selected" name="SpecificationIDCard_Etudiant_Selected" class="form-control" requird="">
+                        <option value="Homme">Carte d'Identité</option>
+                        <option value="Femme">Passeport</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            </div>
+      </div>
+
+         
+         <div class="apply_des">
+               <div class="col-md-12">
+               <hr> <h4 class="mb-4">Tutorat (Inscriptions des mineurs)</h4> <hr>
+               </div>
+               <div class="col-md-12">
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Nom_Prenom_Tuteur" class="fl-label">Nom et Prénom du Tuteur/Tutrice</label>
+                        <input type="text" name="Nom_Prenom_Tuteur" id="Nom_Prenom_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Num_Tel_Tuteur" class="fl-label">Numéro de Tél du Tuteur/Tutrice</label>
+                        <input type="text" name="Num_Tel_Tuteur" id="Num_Tel_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Email_Tuteur" class="fl-label">Adresse e-mail du Tuteur/Tutrice</label>
+                        <input type="text" name="Email_Tuteur" id="Email_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Adress_Resid_Tuteur" class="fl-label">Adresse résidentielle du Tuteur/Tutrice</label>
+                        <input type="text" name="Adress_Resid_Tuteur" id="Adress_Resid_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="Profession_Tuteur" class="fl-label">Profession du Tuteur/Tutrice</label>
+                        <input type="text" name="Profession_Tuteur" id="Profession_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="input-container">
+                     <div class="form-group">
+                        <label for="IDCard_Tuteur" class="fl-label">Téléversez la Carte d'Identité du Tuteur/Tutrice</label>
+                        <input type="file" name="IDCard_Tuteur" id="IDCard_Tuteur" class="form-control">
+                     </div>
+                  </div>
+               </div>
+               </div>
+         </div>
+         
+
+         
+         <div class="apply_des">
+               <div class="col-md-12">
+               <hr> <h4 class="mb-4">Soumettre les information</h4> <hr>
+               </div>
+               <div class="col-md-12">
+                  <label for="submit" class="fl-label">Avant de soumettre ce formulaire, veuillez vous assurer que les informations renseignées sont correctes. En cas d'inscription de mineur, les champs de la partie intitulée tutorat doivent toutes êtres  remplis.</label>
+               </div>
+               <div class="col-md-4">
+                  <div class="input-container">
+                  <div class="form-group">
+                     <button class="btn-style-two" type="submit" data-loading-text="Veuillez patienter un instant..." >SOUMETTRE</button>
+                  </div>
+                  </div>
+               </div>
+         </div>
+      </form>
+   </div>
+   </div>
+   </div>
+   </div>
+</section>
+<!--Content Wrap End-->
+
+  
+</body>
+
+
+</html>

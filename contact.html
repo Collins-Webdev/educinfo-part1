@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université ESSF Godomey</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/44.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/44.jpg">
+
+
+</head>
+<body>
+<section class="sub-header sub-header2">
+<nav>
+    <a href="about.html"> <img src="./img/44.jpg" class="imgh" alt="logo de l'école"> </a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="about.html" target="_blank">À PROPOS</a></li>
+            <li><a href="formation.html" target="_blank">FORMATIONS</a></li>
+            <li><a href="blog.html" target="_blank">BLOG</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+    <h1>Nous Contacter</h1>
+
+    <a href="#lienss2">
+        <div class="scroll-down"></div>
+    </a>
+    
+</section>
+
+<!-- =================== Section Nous contacter ================== -->
+
+    <section class="location" id="lienss2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.995821351856!2d2.3439114!3d6.394539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102357e656394775%3A0xb8ab956f8197cafc!2zw4ljb2xlIFN1cMOpcmlldXIgU2FpbnRlIEbDqWxpY2l0w6kgR29kb21leQ!5e0!3m2!1sfr!2sbj!4v1678525394489!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i> 
+                    <span>
+                        <h5>Godomey, Carrefour Houedonou</h5>
+                        <p>03 BP 4050 Cotonou, BENIN</p>
+                    </span> 
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i> 
+                    <span>
+                        <h5>(+229) 67 74 47 22</h5>
+                        <p>Du lundi au samedi, de 08h à 19h</p>
+                    </span> 
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i> 
+                    <span>
+                        <h5>essaintefelicite@gmail.com</h5>
+                        <p>Envoyez nous un mail pour vos requêtes</p>
+                    </span> 
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Entrez votre nom" required>
+                    <input type="email" name="email" placeholder="Entrez votre addresse mail" required>
+                    <input type="text" name="subject" placeholder="Entrez le sujet de votre message" required>
+                    <textarea rows="10" name="message" placeholder="Entrez votre message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">ENVOYER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<!-- =========== Footer ================================ -->
+<section class="footer">
+    <h1>À propos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore cumque odit. Quo laborum alias et. Quam tempore  dolore numquam <br>ipsam quasi voluptatibus placeat reprehenderit cumque tenetur deleniti, asperiores provident? <a href="">En savoir plus sur nous</a></p>
+    <div class="bas">
+    <div class="icons">
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+        <i class="fa fa-linkedin"></i> 
+    </div>
+    <p class="ppp">
+        Copyright © 2023 All Rights Reserved By </p>
+      <p class="pp"><a href="https://html./monportfolio.com" target="_blank">Collins HAYA</a>
+    </p>
+</div>
+</section>
+
+
+<!-- =========== Section JS pour cacher/afficher la navbar =================== -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu () {
+        navLinks.style.right = "0";
+    }
+    function hideMenu () {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>

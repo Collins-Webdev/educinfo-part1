@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université ESSF Godomey</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/44.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/44.jpg">
+
+
+</head>
+<body>
+<section class="sub-header">
+<nav>
+    <a href="about.html"> <img src="./img/44.jpg" class="imgh" alt="logo de l'école"> </a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="about.html" target="_blank">À PROPOS</a></li>
+            <li><a href="formation.html" target="_blank">FORMATIONS</a></li>
+            <li><a href="blog.html" target="_blank">BLOG</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+    <h1>À propos</h1>
+
+    <a href="#lienss4">
+        <div class="scroll-down"></div>
+    </a>
+    
+</section>
+
+<!-- =================== Section contenu À propos ================== -->
+
+    <section class="about-us" id="lienss4">
+        <div class="row">
+            <div class="about-col">
+                <h1>Nous somme la plus prestigieuse université du Bénin</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad odit veritatis nulla, culpa dolorum consequatur amet, quos quis nam fugiat ipsum provident consectetur quasi natus obcaecati, laborum aliquam cupiditate repellat?</p>
+                <a href="" class="hero-btn red-btn">Explorer nos locaux</a>
+            </div>
+            <div class="about-col">
+                <img src="img/31.jpg" alt="image à propos">
+            </div>
+        </div>
+    </section>
+
+
+<!-- =========== Footer ================================ -->
+<section class="footer">
+    <h1>À propos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore cumque odit. Quo laborum alias et. Quam tempore  dolore numquam <br>ipsam quasi voluptatibus placeat reprehenderit cumque tenetur deleniti, asperiores provident? <a href="">En savoir plus sur nous</a></p>
+    <div class="bas">
+    <div class="icons">
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+        <i class="fa fa-linkedin"></i> 
+    </div>
+    <p class="ppp">
+        Copyright © 2023 All Rights Reserved By </p>
+      <p class="pp"><a href="https://html./monportfolio.com" target="_blank">Collins HAYA</a>
+    </p>
+</div>
+</section>
+
+
+<!-- =========== Section JS pour cacher/afficher la navbar =================== -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu () {
+        navLinks.style.right = "0";
+    }
+    function hideMenu () {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
